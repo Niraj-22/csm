@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFM Dashboard</title>
+  </head>
+  <body>
+    <h1>RFM Dashboard</h1>
+
+    <div>
+      <h2>Summary</h2>
+      {{ result | safe }}
+    </div>
+
+    <div>
+      <h2>RFM Plot</h2>
+      <img
+        src="{{ url_for('static', filename='rfm_plot.png') }}"
+        alt="RFM Plot"
+      />
+    </div>
+  </body>
+</html>
